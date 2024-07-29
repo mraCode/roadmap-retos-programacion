@@ -66,7 +66,10 @@ console.log('Iterativas');
 for (let i = 0; i < 1; i++) {
   console.log('for');
 }
-// Remove the declaration of 'i' before the 'for' loop
+// eslint-disable-next-line no-var
+for (var i = 0; i < 1; i++) {
+  console.log('for');
+}
 while (i < 1) {
   console.log('while');
   i++;
